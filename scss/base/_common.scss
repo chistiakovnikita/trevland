@@ -1,0 +1,57 @@
+@import './variables';
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.logo {
+    font-family: Ribeye;
+    font-size: 24px;
+
+    &--black {
+        color: $black;
+    }
+}
+
+.title {
+    font-family: Gelasio;
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    color: $black;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 29px;
+    color: $black;
+}
+
+.button {
+    width: 100%;
+
+    border-radius: 5px;
+    background-color: $brown;
+    color: $white;
+    transition: filter 0.3s linear;
+
+    &--booking {
+        max-width: 163px;
+        height: 51px;
+    }
+    &--explore {
+        max-width: 187px;
+        height: 59px;
+    }
+
+    &:hover {
+        filter: $hover;
+    }
+}

@@ -1,0 +1,67 @@
+.blog {
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        margin-bottom: 142px;
+    }
+
+    .post {
+        width: 100%;
+        max-width: 554px;
+
+        &--card {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+            margin-bottom: 12px;
+        }
+
+        &__img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 35px;
+
+            &--card {
+                max-width: 263px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__title {
+            font-family: Gelasio;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 32px;
+            margin-bottom: 10px;
+            color: $black;
+
+            &--card {
+                line-height: 30px;
+            }
+        }
+
+        &__subtitle {
+            color: $black;
+            margin-bottom: 10px;
+        }
+
+        &__author {
+            font-size: 20;
+            font-weight: 600;
+            color: $black;
+        }
+    }
+
+    &__posts {
+    }
+}
