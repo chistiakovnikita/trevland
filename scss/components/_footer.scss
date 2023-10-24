@@ -1,4 +1,89 @@
 .footer {
     background: #2694990a;
     padding: 70px 0 78px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .socials {
+        &__text {
+            font-size: 16px;
+            line-height: 26px;
+            color: $black;
+            margin: 40px 0 10px 0;
+        }
+
+        &__mail {
+            display: block;
+            font-size: 16px;
+            line-height: 26px;
+            color: $black;
+            margin-bottom: 20px;
+
+            &:hover {
+                font-weight: 500;
+            }
+        }
+
+        &__list {
+            display: flex;
+            gap: 27px;
+        }
+
+        &__link:hover {
+            filter: $hover;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $black;
+
+        &:hover {
+            font-weight: 600;
+        }
+    }
+
+    &__subscription {
+        width: 100%;
+        max-width: 335px;
+    }
+
+    &__subscription-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        color: $black;
+        margin-bottom: 42px;
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        gap: 35px;
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 195px;
+        height: 44px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #2694990a;
+
+        &::placeholder {
+            color: $black;
+            padding-left: 20px;
+        }
+    }
 }

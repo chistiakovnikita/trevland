@@ -36,7 +36,6 @@
 
 .button {
     width: 100%;
-
     border-radius: 5px;
     background-color: $brown;
     color: $white;
@@ -46,9 +45,15 @@
         max-width: 163px;
         height: 51px;
     }
+
     &--explore {
         max-width: 187px;
         height: 59px;
+    }
+
+    &--form {
+        max-width: 103px;
+        height: 44px;
     }
 
     &:hover {

@@ -510,6 +510,10 @@ button {
   max-width: 187px;
   height: 59px;
 }
+.button--form {
+  max-width: 103px;
+  height: 44px;
+}
 .button:hover {
   filter: brightness(120%);
 }
@@ -617,6 +621,7 @@ button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 52px;
+  padding: 0 15px;
 }
 .offers .card {
   width: 100%;
@@ -744,6 +749,75 @@ button {
 .footer {
   background: rgba(38, 148, 153, 0.0392156863);
   padding: 70px 0 78px 0;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .socials__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  margin: 40px 0 10px 0;
+}
+.footer .socials__mail {
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.footer .socials__mail:hover {
+  font-weight: 500;
+}
+.footer .socials__list {
+  display: flex;
+  gap: 27px;
+}
+.footer .socials__link:hover {
+  filter: brightness(120%);
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer__link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+}
+.footer__link:hover {
+  font-weight: 600;
+}
+.footer__subscription {
+  width: 100%;
+  max-width: 335px;
+}
+.footer__subscription-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 42px;
+}
+.footer__form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  gap: 35px;
+}
+.footer__input {
+  width: 100%;
+  max-width: 195px;
+  height: 44px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(38, 148, 153, 0.0392156863);
+}
+.footer__input::placeholder {
+  color: #000000;
+  padding-left: 20px;
 }
 
 body {
