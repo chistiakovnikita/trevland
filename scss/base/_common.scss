@@ -17,6 +17,10 @@
     &--black {
         color: $black;
     }
+
+    @media screen and (max-width: 850px) {
+        width: 70%;
+    }
 }
 
 .title {
@@ -26,6 +30,10 @@
     line-height: 60px;
     text-align: center;
     color: $black;
+
+    @media screen and (max-width: 565px) {
+        font-size: 25px;
+    }
 }
 
 .text {
@@ -56,7 +64,19 @@
         height: 44px;
     }
 
+    &--hamburger {
+        display: none;
+        @media screen and (max-width: 850px) {
+            display: block;
+        }
+    }
+
     &:hover {
         filter: $hover;
+    }
+
+    @media screen and (max-width: 425px) {
+        max-width: 130px;
+        height: 42px;
     }
 }

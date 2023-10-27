@@ -1,12 +1,18 @@
 .offers {
     margin-bottom: 140px;
 
+    @media screen and (max-width: 768px) {
+        margin-bottom: 35px;
+    }
+
     &__title {
         margin-bottom: 20px;
     }
 
     &__subtitle {
+        max-width: 660px;
         text-align: center;
+        margin: 0 auto;
         margin-bottom: 60px;
     }
 
@@ -15,11 +21,44 @@
         justify-content: space-between;
         margin-bottom: 52px;
         padding: 0 15px;
+
+        @media screen and (max-width: 870px) {
+            justify-content: space-evenly;
+        }
+
+        & > div:last-of-type {
+            @media screen and (max-width: 1380px) {
+                display: none;
+            }
+        }
+
+        & > div:nth-last-of-type(4) {
+            @media screen and (max-width: 1130px) {
+                display: none;
+            }
+        }
+
+        & > div:nth-last-of-type(3) {
+            @media screen and (max-width: 870px) {
+                display: none;
+            }
+        }
+
+        & > div:nth-last-of-type(2) {
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 35px;
+        }
     }
 
     .card {
         width: 100%;
         max-width: 262px;
+        border: none;
 
         &__title {
             font-family: Gelasio;
@@ -101,3 +140,7 @@
         }
     }
 }
+
+// .offers__content > div:last-of-type {
+//     display: none;
+// }

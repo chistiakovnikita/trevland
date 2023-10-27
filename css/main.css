@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Gelasio:wght@500;700&family=Ribeye&family=Roboto:wght@400;500&display=swap");
+.offcanvas__list {
+  text-align: center;
+  padding-top: 50px;
+}
+.offcanvas__item {
+  margin-bottom: 30px;
+}
+.offcanvas__link {
+  font-family: Ribeye;
+  font-size: 30px;
+  color: #000000;
+  transform: scale(1);
+}
+.offcanvas__link:hover {
+  color: rgb(109, 109, 109);
+}
+.offcanvas__btn {
+  width: 50px;
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: right;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -479,6 +504,11 @@ button {
 .logo--black {
   color: #000000;
 }
+@media screen and (max-width: 850px) {
+  .logo {
+    width: 70%;
+  }
+}
 
 .title {
   font-family: Gelasio;
@@ -487,6 +517,11 @@ button {
   line-height: 60px;
   text-align: center;
   color: #000000;
+}
+@media screen and (max-width: 565px) {
+  .title {
+    font-size: 25px;
+  }
 }
 
 .text {
@@ -514,15 +549,37 @@ button {
   max-width: 103px;
   height: 44px;
 }
+.button--hamburger {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .button--hamburger {
+    display: block;
+  }
+}
 .button:hover {
   filter: brightness(120%);
 }
+@media screen and (max-width: 425px) {
+  .button {
+    max-width: 130px;
+    height: 42px;
+  }
+}
 
 .header {
-  background: url(../../img/header/bg.jpg);
+  background-image: url(../../img/header/bg.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-bottom: 227px;
   margin-bottom: 140px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding-bottom: 85px;
+    margin-bottom: 35px;
+  }
 }
 .header__nav {
   padding: 42px 0 208px 0;
@@ -530,8 +587,23 @@ button {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 850px) {
+  .header__nav {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__nav {
+    padding: 42px 0 70px 0;
+  }
+}
 .header__nav-list {
   display: flex;
+}
+@media screen and (max-width: 850px) {
+  .header__nav-list {
+    display: none;
+  }
 }
 .header__nav-item {
   transform: scale(1);
@@ -546,13 +618,33 @@ button {
 .header__nav-link {
   font-size: 18px;
   font-weight: 500;
-  color: inherit;
+  color: #ffffff;
+}
+.header__nav-link:hover {
+  color: #ffffff;
 }
 .header__title {
   font-size: 65px;
   font-weight: 700;
   line-height: 78px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .header__title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 565px) {
+  .header__title {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__title {
+    font-size: 25px;
+    line-height: 38px;
+  }
 }
 .header__subtitle {
   max-width: 458px;
@@ -564,17 +656,29 @@ button {
 .locations {
   margin-bottom: 140px;
 }
+@media screen and (max-width: 768px) {
+  .locations {
+    margin-bottom: 35px;
+  }
+}
 .locations__title {
   margin-bottom: 20px;
 }
 .locations__subtitle {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
   text-align: center;
-  margin-bottom: 50px;
 }
 .locations__content {
   display: flex;
   justify-content: space-between;
   gap: 31px;
+}
+@media screen and (max-width: 800px) {
+  .locations__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .locations__content .card {
   width: 100%;
@@ -584,6 +688,11 @@ button {
   cursor: pointer;
   transition: box-shadow 0.3s linear;
 }
+@media screen and (max-width: 800px) {
+  .locations__content .card {
+    max-width: 560px;
+  }
+}
 .locations__content .card:hover {
   box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.0784313725);
 }
@@ -592,7 +701,26 @@ button {
   height: auto;
 }
 .locations__content .card__info {
+  display: grid;
+  grid-template-rows: 50px auto;
   padding: 35px 27px 33px 27px;
+}
+@media screen and (max-width: 1100px) {
+  .locations__content .card__info {
+    grid-template-rows: 80px auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .locations__content .card__info {
+    grid-template-rows: 45px auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .locations__content .card__info {
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+    padding: 15px 10px 23px 10px;
+  }
 }
 .locations__content .card__title {
   text-align: center;
@@ -600,8 +728,12 @@ button {
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
-  margin-bottom: 10px;
   color: #000000;
+}
+@media screen and (max-width: 565px) {
+  .locations__content .card__title {
+    font-size: 20px;
+  }
 }
 .locations__content .card__subtitle {
   text-align: center;
@@ -610,11 +742,18 @@ button {
 .offers {
   margin-bottom: 140px;
 }
+@media screen and (max-width: 768px) {
+  .offers {
+    margin-bottom: 35px;
+  }
+}
 .offers__title {
   margin-bottom: 20px;
 }
 .offers__subtitle {
+  max-width: 660px;
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 60px;
 }
 .offers__content {
@@ -623,9 +762,40 @@ button {
   margin-bottom: 52px;
   padding: 0 15px;
 }
+@media screen and (max-width: 870px) {
+  .offers__content {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .offers__content > div:last-of-type {
+    display: none;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .offers__content > div:nth-last-of-type(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 870px) {
+  .offers__content > div:nth-last-of-type(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .offers__content > div:nth-last-of-type(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .offers__content {
+    margin-bottom: 35px;
+  }
+}
 .offers .card {
   width: 100%;
   max-width: 262px;
+  border: none;
 }
 .offers .card__title {
   font-family: Gelasio;

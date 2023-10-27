@@ -1,0 +1,30 @@
+.offcanvas {
+    &__list {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        font-family: Ribeye;
+        font-size: 30px;
+        color: $black;
+        transform: scale(1);
+
+        &:hover {
+            color: rgb(109, 109, 109);
+        }
+    }
+
+    &__btn {
+        width: 50px;
+    }
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: right;
+}

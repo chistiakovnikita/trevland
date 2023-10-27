@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@500;700&family=Ribeye&family=Roboto:wght@400;500&display=swap');
 
+@import './base/variables';
+@import './base/bootstrap';
 @import './base/normalize';
 @import './base/reset';
 @import './base/common';
-@import './base/variables';
 
 @import './components/header';
 @import './components/main/locations';
