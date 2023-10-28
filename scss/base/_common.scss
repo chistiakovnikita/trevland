@@ -33,6 +33,7 @@
 
     @media screen and (max-width: 565px) {
         font-size: 25px;
+        font-weight: 600;
     }
 }
 
@@ -57,11 +58,20 @@
     &--explore {
         max-width: 187px;
         height: 59px;
+
+        @media screen and (max-width: 425px) {
+            max-width: 135px;
+            height: 45px;
+        }
     }
 
     &--form {
         max-width: 103px;
         height: 44px;
+
+        @media screen and (max-width: 425px) {
+            max-width: 60px;
+        }
     }
 
     &--hamburger {
@@ -73,10 +83,5 @@
 
     &:hover {
         filter: $hover;
-    }
-
-    @media screen and (max-width: 425px) {
-        max-width: 130px;
-        height: 42px;
     }
 }

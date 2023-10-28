@@ -1,0 +1,39 @@
+.swiper {
+    width: 100%;
+    height: 410px;
+}
+
+.swiper-wrapper {
+    position: relative;
+}
+
+.swiper-slide {
+    width: 262px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    background: $brown;
+    width: 12px;
+    height: 12px;
+}
+
+.blog__swiper {
+    height: 530px;
+    display: none;
+
+    @media screen and (max-width: 840px) {
+        display: block;
+    }
+
+    @media screen and (max-width: 640px) {
+        max-width: 500px;
+        height: 540px;
+    }
+
+    @media screen and (max-width: 375px) {
+        height: 460px;
+    }
+}

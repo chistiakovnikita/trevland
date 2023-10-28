@@ -9,6 +9,10 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
         <link rel="stylesheet" href="./css/main.css" />
         <title>Trevland</title>
     </head>
@@ -152,152 +156,256 @@
                 <h1 class="offers__title title">Special Offers</h1>
                 <h2 class="offers__subtitle text">
                     With the New Year comes a refreshing sense of wanderlust, a
-                    longing in our souls <br />
-                    to escape to warmer climates.
+                    longing in our souls to escape to warmer climates.
                 </h2>
-                <div class="offers__content">
-                    <div class="card">
-                        <img
-                            class="card__img"
-                            src="./img/offers/usa.jpg"
-                            alt="picture"
-                        />
-                        <h3 class="card__title">Statue of Liberty</h3>
-                        <div class="flex-container">
-                            <div class="card__location">
-                                <img
-                                    src="./img/offers/location.svg"
-                                    alt="icon"
-                                />
-                                <p class="card__location-city">New York</p>
-                            </div>
-                            <div class="card__rating">
-                                <img src="./img/offers/star.svg" alt="icon" />
-                                <span class="card__rating-num">4.8</span>
-                            </div>
-                        </div>
-                        <p class="card__duration">4 Day 5 Nights</p>
-                        <p class="card__price"><span>$450/</span>person</p>
-                    </div>
-                    <div class="card">
-                        <img
-                            class="card__img"
-                            src="./img/offers/china.jpg"
-                            alt="picture"
-                        />
-                        <h3 class="card__title">The Great Wall</h3>
-                        <div class="flex-container">
-                            <div class="card__location">
-                                <img
-                                    src="./img/offers/location.svg"
-                                    alt="icon"
-                                />
-                                <p class="card__location-city">China</p>
-                            </div>
-                            <div class="card__rating">
-                                <img src="./img/offers/star.svg" alt="icon" />
-                                <span class="card__rating-num">4.9</span>
-                            </div>
-                        </div>
-                        <p class="card__duration">7 Day 8 Nights</p>
-                        <p class="card__price"><span>$850/</span>person</p>
-                    </div>
-                    <div class="card">
-                        <img
-                            class="card__img"
-                            src="./img/offers/iran.jpg"
-                            alt="picture"
-                        />
-                        <h3 class="card__title">Dizin</h3>
-                        <div class="flex-container">
-                            <div class="card__location">
-                                <img
-                                    src="./img/offers/location.svg"
-                                    alt="icon"
-                                />
-                                <p class="card__location-city">Iran</p>
-                            </div>
-                            <div class="card__rating">
-                                <img src="./img/offers/star.svg" alt="icon" />
-                                <span class="card__rating-num">4.6</span>
-                            </div>
-                        </div>
-                        <p class="card__duration">4 Day 5 Nights</p>
-                        <p class="card__price"><span>$550/</span>person</p>
-                    </div>
-                    <div class="card">
-                        <img
-                            class="card__img"
-                            src="./img/offers/bangladesh.jpg"
-                            alt="picture"
-                        />
-                        <h3 class="card__title">Sajek Valley</h3>
-                        <div class="flex-container">
-                            <div class="card__location">
-                                <img
-                                    src="./img/offers/location.svg"
-                                    alt="icon"
-                                />
-                                <p class="card__location-city">Bangladesh</p>
-                            </div>
-                            <div class="card__rating">
-                                <img src="./img/offers/star.svg" alt="icon" />
-                                <span class="card__rating-num">4.7</span>
-                            </div>
-                        </div>
-                        <p class="card__duration">3 Day 4 Nights</p>
-                        <p class="card__price"><span>$400/</span>person</p>
-                    </div>
-                    <div class="card">
-                        <img
-                            class="card__img"
-                            src="./img/offers/japan.jpg"
-                            alt="picture"
-                        />
-                        <h3 class="card__title">Osaka Castle</h3>
-                        <div class="flex-container">
-                            <div class="card__location">
-                                <img
-                                    src="./img/offers/location.svg"
-                                    alt="icon"
-                                />
-                                <p class="card__location-city">Japan</p>
-                            </div>
-                            <div class="card__rating">
-                                <img src="./img/offers/star.svg" alt="icon" />
-                                <span class="card__rating-num">4.9</span>
-                            </div>
-                        </div>
-                        <p class="card__duration">4 Day 5 Nights</p>
-                        <p class="card__price"><span>$700/</span>person</p>
-                    </div>
-                </div>
 
-                <div class="pagination">
-                    <button class="pagination__btn">
-                        <img src="./img/offers/left.svg" alt="icon" />
-                    </button>
-                    <div class="pagination__bar">
-                        <div class="pagination__item"></div>
-                        <div
-                            class="pagination__item pagination__item--active"
-                        ></div>
-                        <div class="pagination__item"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img
+                                    class="card__img"
+                                    src="./img/offers/usa.jpg"
+                                    alt="picture"
+                                />
+                                <h3 class="card__title">Statue of Liberty</h3>
+                                <div class="flex-container">
+                                    <div class="card__location">
+                                        <img
+                                            src="./img/offers/location.svg"
+                                            alt="icon"
+                                        />
+                                        <p class="card__location-city">
+                                            New York
+                                        </p>
+                                    </div>
+                                    <div class="card__rating">
+                                        <img
+                                            src="./img/offers/star.svg"
+                                            alt="icon"
+                                        />
+                                        <span class="card__rating-num"
+                                            >4.8</span
+                                        >
+                                    </div>
+                                </div>
+                                <p class="card__duration">4 Day 5 Nights</p>
+                                <p class="card__price">
+                                    <span>$450/</span>person
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img
+                                    class="card__img"
+                                    src="./img/offers/china.jpg"
+                                    alt="picture"
+                                />
+                                <h3 class="card__title">The Great Wall</h3>
+                                <div class="flex-container">
+                                    <div class="card__location">
+                                        <img
+                                            src="./img/offers/location.svg"
+                                            alt="icon"
+                                        />
+                                        <p class="card__location-city">China</p>
+                                    </div>
+                                    <div class="card__rating">
+                                        <img
+                                            src="./img/offers/star.svg"
+                                            alt="icon"
+                                        />
+                                        <span class="card__rating-num"
+                                            >4.9</span
+                                        >
+                                    </div>
+                                </div>
+                                <p class="card__duration">7 Day 8 Nights</p>
+                                <p class="card__price">
+                                    <span>$850/</span>person
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img
+                                    class="card__img"
+                                    src="./img/offers/iran.jpg"
+                                    alt="picture"
+                                />
+                                <h3 class="card__title">Dizin</h3>
+                                <div class="flex-container">
+                                    <div class="card__location">
+                                        <img
+                                            src="./img/offers/location.svg"
+                                            alt="icon"
+                                        />
+                                        <p class="card__location-city">Iran</p>
+                                    </div>
+                                    <div class="card__rating">
+                                        <img
+                                            src="./img/offers/star.svg"
+                                            alt="icon"
+                                        />
+                                        <span class="card__rating-num"
+                                            >4.6</span
+                                        >
+                                    </div>
+                                </div>
+                                <p class="card__duration">4 Day 5 Nights</p>
+                                <p class="card__price">
+                                    <span>$550/</span>person
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img
+                                    class="card__img"
+                                    src="./img/offers/bangladesh.jpg"
+                                    alt="picture"
+                                />
+                                <h3 class="card__title">Sajek Valley</h3>
+                                <div class="flex-container">
+                                    <div class="card__location">
+                                        <img
+                                            src="./img/offers/location.svg"
+                                            alt="icon"
+                                        />
+                                        <p class="card__location-city">
+                                            Bangladesh
+                                        </p>
+                                    </div>
+                                    <div class="card__rating">
+                                        <img
+                                            src="./img/offers/star.svg"
+                                            alt="icon"
+                                        />
+                                        <span class="card__rating-num"
+                                            >4.7</span
+                                        >
+                                    </div>
+                                </div>
+                                <p class="card__duration">3 Day 4 Nights</p>
+                                <p class="card__price">
+                                    <span>$400/</span>person
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img
+                                    class="card__img"
+                                    src="./img/offers/japan.jpg"
+                                    alt="picture"
+                                />
+                                <h3 class="card__title">Osaka Castle</h3>
+                                <div class="flex-container">
+                                    <div class="card__location">
+                                        <img
+                                            src="./img/offers/location.svg"
+                                            alt="icon"
+                                        />
+                                        <p class="card__location-city">Japan</p>
+                                    </div>
+                                    <div class="card__rating">
+                                        <img
+                                            src="./img/offers/star.svg"
+                                            alt="icon"
+                                        />
+                                        <span class="card__rating-num"
+                                            >4.9</span
+                                        >
+                                    </div>
+                                </div>
+                                <p class="card__duration">4 Day 5 Nights</p>
+                                <p class="card__price">
+                                    <span>$700/</span>person
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img
+                                    class="card__img"
+                                    src="./img/offers/iran.jpg"
+                                    alt="picture"
+                                />
+                                <h3 class="card__title">Dizin</h3>
+                                <div class="flex-container">
+                                    <div class="card__location">
+                                        <img
+                                            src="./img/offers/location.svg"
+                                            alt="icon"
+                                        />
+                                        <p class="card__location-city">Iran</p>
+                                    </div>
+                                    <div class="card__rating">
+                                        <img
+                                            src="./img/offers/star.svg"
+                                            alt="icon"
+                                        />
+                                        <span class="card__rating-num"
+                                            >4.6</span
+                                        >
+                                    </div>
+                                </div>
+                                <p class="card__duration">4 Day 5 Nights</p>
+                                <p class="card__price">
+                                    <span>$550/</span>person
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img
+                                    class="card__img"
+                                    src="./img/offers/usa.jpg"
+                                    alt="picture"
+                                />
+                                <h3 class="card__title">Statue of Liberty</h3>
+                                <div class="flex-container">
+                                    <div class="card__location">
+                                        <img
+                                            src="./img/offers/location.svg"
+                                            alt="icon"
+                                        />
+                                        <p class="card__location-city">
+                                            New York
+                                        </p>
+                                    </div>
+                                    <div class="card__rating">
+                                        <img
+                                            src="./img/offers/star.svg"
+                                            alt="icon"
+                                        />
+                                        <span class="card__rating-num"
+                                            >4.8</span
+                                        >
+                                    </div>
+                                </div>
+                                <p class="card__duration">4 Day 5 Nights</p>
+                                <p class="card__price">
+                                    <span>$450/</span>person
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <button class="pagination__btn">
-                        <img src="./img/offers/right.svg" alt="icon" />
-                    </button>
-                    <button></button>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
-            <!-- <section class="blog">
+            <section class="blog">
                 <div class="container">
                     <h1 class="blog__title title">From Blog & News</h1>
                     <h2 class="blog__subtitle text">
                         Welcome to Community Conversations, a new interview
-                        series featuring <br />
-                        Intrepid travellers, creatives and activists in our
-                        community.
+                        series featuring Intrepid travellers, creatives and
+                        activists in our community.
                     </h2>
                     <div class="blog__content">
                         <div class="post">
@@ -306,16 +414,20 @@
                                 src="./img/blog/canada.jpg"
                                 alt="picture"
                             />
-                            <h3 class="post__title">Banff National Park</h3>
-                            <h4 class="post__subtitle text">
-                                Banff National Park lies in the heart of the
-                                majestic Rocky Mountains in the province of
-                                Alberta, and showcases some of Canada's most
-                                beautiful scenery. Turquoise-colored lakes,
-                                snow-capped peaks, and glaciers are all easily
-                                accessible
-                            </h4>
-                            <span class="post__author">@thomasalva_adison</span>
+                            <div class="post__text">
+                                <h3 class="post__title">Banff National Park</h3>
+                                <h4 class="post__subtitle text">
+                                    Banff National Park lies in the heart of the
+                                    majestic Rocky Mountains in the province of
+                                    Alberta, and showcases some of Canada's most
+                                    beautiful scenery. Turquoise-colored lakes,
+                                    snow-capped peaks, and glaciers are all
+                                    easily accessible
+                                </h4>
+                                <span class="post__author"
+                                    >@thomasalva_adison</span
+                                >
+                            </div>
                         </div>
                         <div class="blog__posts">
                             <div class="post post--card">
@@ -374,11 +486,87 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="swiper blog__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="post post--card">
+                                        <img
+                                            class="post__img post__img--card"
+                                            src="./img/blog/hiroshima.jpg"
+                                            alt="picture"
+                                        />
+                                        <div class="post__info">
+                                            <h3
+                                                class="post__title post__title--card"
+                                            >
+                                                The Hiroshima Peace!
+                                            </h3>
+                                            <h4 class="post__subtitle text">
+                                                It was formally opened to the
+                                                public in August that year.
+                                            </h4>
+                                            <span class="post__author"
+                                                >@shova_bd88</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="post post--card">
+                                        <img
+                                            class="post__img post__img--card"
+                                            src="./img/blog/india.jpg"
+                                            alt="picture"
+                                        />
+                                        <div class="post__info">
+                                            <h3
+                                                class="post__title post__title--card"
+                                            >
+                                                The faithful prayers!
+                                            </h3>
+                                            <h4 class="post__subtitle text">
+                                                A major pilgrimage center for
+                                                Hindus, the holy city.
+                                            </h4>
+                                            <span class="post__author"
+                                                >@adem/smith</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="post post--card">
+                                        <img
+                                            class="post__img post__img--card"
+                                            src="./img/blog/pakistan.jpg"
+                                            alt="picture"
+                                        />
+                                        <div class="post__info">
+                                            <h3
+                                                class="post__title post__title--card"
+                                            >
+                                                Colourful waters!
+                                            </h3>
+                                            <h4 class="post__subtitle text">
+                                                Forest-driven water and energy
+                                                cycles are poorly.
+                                            </h4>
+                                            <span class="post__author"
+                                                >@jhon7leew</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
         </main>
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="socials">
@@ -468,11 +656,13 @@
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
     </body>
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
 </html>
